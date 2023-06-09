@@ -1,6 +1,9 @@
 package com.example.TRPOhome.model.enums;
 
 public enum UserRole {
-    ADMIN,
-    EMPLOYEE
+    ROLE_USER,
+    ROLE_MODERATOR,
+    ROLE_ADMIN,
+
+    ROLE_
 }

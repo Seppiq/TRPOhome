@@ -27,6 +27,12 @@ public class Student {
     @Column(name = "BIRTHDATE")
     private Date birthdate;
 
+    @Column(name = "DATANARUSHENIA")
+    private Date dataNarusheniya;
+
+    @Column(name = "NAMENARUSHENIA")
+    private String NAMENARUSHENIA;
+
     @Column(name = "MOBILE_PHONE")
     private String mp;
 

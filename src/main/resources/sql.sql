@@ -1,0 +1,1 @@
+insert into  employees (id, username, password) values (21, 'kiman', 'kiman')

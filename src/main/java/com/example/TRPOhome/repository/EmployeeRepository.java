@@ -15,4 +15,8 @@ public interface EmployeeRepository extends CrudRepository<Employee, Long> {
     Optional<Employee> findById(Long aLong);
 
     Optional<Employee> findByUsername(String string);
+
+    Employee findByGoogleNameIgnoreCase(String emailId);
+
+    Boolean existsEmployeeByGoogleName(String email);
 }

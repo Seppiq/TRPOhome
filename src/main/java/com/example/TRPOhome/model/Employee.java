@@ -4,16 +4,17 @@ import com.example.TRPOhome.model.enums.Access;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
 @Table(name = "EMPLOYEES")
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString
 @EqualsAndHashCode
 @Getter
 @Setter
+@AllArgsConstructor
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -23,10 +24,10 @@ public class Employee {
     private String name;
 
     @Column
-    private String googleName;
+    private String googleUsername;
 
     @Column
-    private String googleUsername;
+    private String googleName;
 
     @Column(name = "LASTNAME")
     private String lastname;
@@ -56,9 +57,11 @@ public class Employee {
     @Enumerated(EnumType.STRING)
     private Access access;
 
-/*    public Employee(String username, String password, String role) {
+
+    public Employee(String name, String lastname, String username, String password, String roleUser, LocalDate now, String number, String manager) {
         this.username = username;
         this.password = password;
-        this.role = role;
-    }*/
+        this.name = name;
+        this.lastname = lastname;
+    }
 }
